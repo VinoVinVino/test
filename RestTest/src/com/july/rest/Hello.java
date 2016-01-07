@@ -11,7 +11,7 @@ public class Hello {
 	@GET 
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayPlainTextHello() {
-		return "Welcome to Rest Application";
+		return "Welcome to Rest Application in Welcome Page";
 	}
 
 	@GET
@@ -23,7 +23,7 @@ public class Hello {
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHtmlHello() {
-		return "<html> " + "<title>" + "Welcome to Rest Application" + "</title>" + "<body><h1>" + "Hello Welcome to Rest Application" + "</body></h1>"
+		return "<html> " + "<title>" + "Welcome to Rest Application" + "</title>" + "<body><h1>" + "Welcome to Rest Application" + "</body></h1>"
 				+ "</html> ";
 	}
 	
