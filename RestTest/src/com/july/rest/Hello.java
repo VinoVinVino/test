@@ -17,19 +17,19 @@ public class Hello {
 	@GET
 	@Produces(MediaType.TEXT_XML)
 	public String sayXMLHello() {
-		return "<?xml version=\"1.0\"?>" + "<hello> Welcome to Rest Application" + "</hello>";
+		return "<?xml version=\"1.0\"?>" + "<hello> Welcome to Rest Application in Welcome Page ..!" + "</hello>";
 	}
 
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHtmlHello() {
-		return "<html> " + "<title>" + "Welcome to Rest Application" + "</title>" + "<body><h1>" + "Welcome to Rest Application" + "</body></h1>"
+		return "<html> " + "<title>" + "Welcome to Rest Application in Welcome Page ..!" + "</title>" + "<body><h1>" + "Welcome to Rest Application in Welcome Page ..!" + "</body></h1>"
 				+ "</html> ";
 	}
 	
 	@Path("hello/welcome")
 	public String writeWelcome(){
-		return "Welcome to Rest Application in Welcome Page";
+		return "Welcome to Rest Application in Welcome Page ..!";
 	}
 
 }
