@@ -27,7 +27,7 @@ public class Hello {
 				+ "</html> ";
 	}
 	
-	@Path("/welcome")
+	@Path("hello/welcome")
 	public String writeWelcome(){
 		return "Welcome to Rest Application in Welcome Page";
 	}
