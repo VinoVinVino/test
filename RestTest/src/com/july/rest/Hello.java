@@ -23,6 +23,8 @@ public class Hello {
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHtmlHello() {
+		
+		System.out.println("Heloooo");
 		return "<html> " + "<title>" + "RestTest" + "</title>" + "<body><h1>" + "Welcome to Rest Application which is deployed by Jenkins from GitHub" + "</body></h1>"
 				+ "</html> ";
 	}
