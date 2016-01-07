@@ -11,25 +11,25 @@ public class Hello {
 	@GET 
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayPlainTextHello() {
-		return "Welcome to Rest Application in Welcome Page ..!";
+		return "1 Welcome to Rest Application in Welcome Page ..!";
 	}
 
 	@GET
 	@Produces(MediaType.TEXT_XML)
 	public String sayXMLHello() {
-		return "<?xml version=\"1.0\"?>" + "<hello> Welcome to Rest Application in Welcome Page ..!" + "</hello>";
+		return "<?xml version=\"1.0\"?>" + "<hello> 2 Welcome to Rest Application in Welcome Page ..!" + "</hello>";
 	}
 
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHtmlHello() {
-		return "<html> " + "<title>" + "Welcome to Rest Application in Welcome Page ..!" + "</title>" + "<body><h1>" + "Welcome to Rest Application in Welcome Page ..!" + "</body></h1>"
+		return "<html> " + "<title>" + "3 Welcome to Rest Application in Welcome Page ..!" + "</title>" + "<body><h1>" + "4 Welcome to Rest Application in Welcome Page ..!" + "</body></h1>"
 				+ "</html> ";
 	}
 	
 	@Path("hello/welcome")
 	public String writeWelcome(){
-		return "Welcome to Rest Application in Welcome Page ..!";
+		return "5 Welcome to Rest Application in Welcome Page ..!";
 	}
 
 }
