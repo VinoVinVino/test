@@ -11,7 +11,7 @@ public class Hello {
 	@GET 
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayPlainTextHello() {
-		return "Welcome to Rest Application in Welcome Page";
+		return "Welcome to Rest Application in Welcome Page ..!";
 	}
 
 	@GET
